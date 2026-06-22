@@ -5,7 +5,7 @@
 [![Style](https://img.shields.io/badge/Style-Vanilla%20CSS-1572B6?style=flat-square&logo=css3&logoColor=white)](src/index.css)
 [![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
 
-A mobile-first web application for shift planning and staff scheduling.
+A mobile-first Telegram Mini App for shift planning and staff scheduling.
 
 ---
 
