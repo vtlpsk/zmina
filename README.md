@@ -1,51 +1,75 @@
-# Zmina.app 🗓️
+# Zmina 🗓️
 
-Сучасний мобільний веб-додаток для планування та управління змінами робочого персоналу. Додаток розроблено з урахуванням сучасних стандартів UX/UI, використовуючи адаптивний дизайн та преміальну естетику типу "Liquid Glass" (рідке скло).
+[![React](https://img.shields.io/badge/React-18.x-61DAFB?style=flat-square&logo=react&logoColor=black)](https://reactjs.org/)
+[![Vite](https://img.shields.io/badge/Vite-8.x-646CFF?style=flat-square&logo=vite&logoColor=white)](https://vite.dev/)
+[![Style](https://img.shields.io/badge/Style-Vanilla%20CSS-1572B6?style=flat-square&logo=css3&logoColor=white)](src/index.css)
+[![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
 
----
-
-## 🚀 Функціонал додатку
-
-Додаток має два режими роботи, які можна перемикати через симуляційну панель розробника вгорі екрана:
-
-### 💼 Панель Менеджера (Manager View)
-* **Графік змін:**
-  * **"Хто працює сьогодні"** (Daily Overview): швидкий зріз поточного дня з відображенням списку працівників на зміні, часу їхніх змін та інтерактивного міні-таймлайну робочого дня. Замість громіздких іконок додано елегантний зелений індикатор статусу (green dot) зі свіченням.
-  * **Редагування графіків:** зручні інтерактивні картки працівників із роздільним відображенням кількості запланованих змін (зелений бейдж) та сумарного часу роботи у годинах (блакитний скляний бейдж).
-  * **Інтерактивний календар:** відкривається при натисканні на працівника. Дозволяє зручно редагувати та переглядати розклад на весь місяць з навігацією.
-  * **Підсвічування "Сьогодні"**: візуальне виділення поточного дня в календарі за допомогою анімованої пульсуючої крапки.
-  * **Керування змінами:** швидке вікно налаштування змін (робочі presets: Ранкова, Повна, Вечірня, або Вихідний) з можливістю додавання кастомних годин та текстових коментарів.
-* **Персонал:**
-  * Додавання нових робітників із зазначенням імені та посади.
-  * Видалення робітників із системи зі спливаючим вікном підтвердження.
-
-### 👤 Панель Робітника (Worker View)
-* **Вітальна картка:** відображення імені працівника, поточного місяця та детальної статистики (кількість змін та загальна кількість відпрацьованих **годин** замість скорочення "год").
-* **Місячний календар:** інтерактивна сітка для вибору дня з яскравим позначенням робочих (зелені) та вихідних (прозорі) днів. Поточний день підсвічується пульсуючим маркером.
-* **Деталі зміни:** інформаційна картка для вибраного дня, що детально описує статус (Робочий/Вихідний), точні години роботи та коментарі від менеджера.
-* **Локалізація дат:** відображення повної назви дня тижня (наприклад, *Середа*, *Вівторок*) замість скорочень всюди поза сіткою календаря.
+A modern, high-fidelity mobile-first web application designed for seamless shift planning and staff scheduling. Built with a premium **"Liquid Glass"** visual aesthetic, smooth animations, and optimized mobile-first user flows.
 
 ---
 
-## 🛠️ Технологічний стек
+## ✨ Features
 
-* **Frontend:** React 18, Vite
-* **Стилізація:** Vanilla CSS (естетика Liquid Glass, адаптивна сітка, Flexbox)
-* **Іконки:** Lucide React
-* **Інструменти збірки:** npm, Vite dev server
+The application incorporates a role simulation switcher, enabling instant testing of two distinct user views:
+
+### 💼 Manager Dashboard
+* **Real-time "Who's Working Today" (Daily Overview):**
+  * Live snapshot of staff currently on shift with custom green glow status indicators.
+  * Abstract visual timelines mapping the exact duration and position of shifts across a 24-hour scale.
+* **Smart Calendar Scheduling:**
+  * Interactive monthly planner with automated total monthly shifts and total hours calculation.
+  * Animated pulsing "Today" indicator for effortless time navigation.
+  * Adaptive shift presets (*Morning*, *Full-Day*, *Evening*, *Off-Duty*) alongside custom time pickers and notes.
+* **Staff Directory Management:**
+  * Quick panel to add new employees, assign roles, or remove personnel with confirmation prompts.
+
+### 👤 Worker Dashboard
+* **Personal Schedule Snapshot:**
+  * Dynamic welcome greeting with a real-time tally of monthly shifts and cumulative work hours.
+* **Visual Monthly Calendar:**
+  * At-a-glance color-coded schedule: active working days marked in green, off-days transparent.
+* **Detailed Shift Cards:**
+  * Clean context cards showing work status, hours, and manager notes for the selected day.
+  * Native localized full-day names (e.g., *Wednesday* instead of abbreviations like *Wed*) for optimal readability.
 
 ---
 
-## 📦 Встановлення та запуск
+## 🛠️ Tech Stack
 
-1. Переконайтеся, що на вашому комп'ютері встановлено **Node.js**.
-2. Встановіть залежності:
+* **Core Framework:** [React 18](https://react.dev/)
+* **Build System:** [Vite](https://vite.dev/)
+* **Styling System:** Vanilla CSS featuring Backdrop Filters (Glassmorphism), Flexbox, & CSS Grid
+* **Icons:** [Lucide React](https://lucide.dev/)
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+* Ensure you have [Node.js](https://nodejs.org/) installed (LTS recommended).
+
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/vtlpsk/zmina.git
+   cd zmina
+   ```
+2. Install dependencies:
    ```bash
    npm install
    ```
-3. Запустіть сервер для локальної розробки:
+3. Launch the development server:
    ```bash
    npm run dev
    ```
-4. Відкрийте посилання у браузері (зазвичай це дефолтний порт Vite):
-   [http://localhost:5173/](http://localhost:5173/) *(або порт, який буде вказано у виводі терміналу після запуску)*
+4. Open the local address shown in your terminal (typically `http://localhost:5173`).
+
+---
+
+## 🎨 Design Philosophy
+
+Zmina's UI is built on the **Liquid Glass** architecture:
+* **Translucency:** Uses CSS variable `backdrop-filter: blur(24px)` combined with semi-transparent background colors for a layered, three-dimensional depth.
+* **Micro-interactions:** Interactive components leverage delicate animations such as scale transitions on click and pulsing markers (`@keyframes pulse-dot`).
+* **Optimized Badges:** Separate visual groups for shift counts (subtle green theme) and total hours (translucent ice-blue theme) to lower cognitive load.
